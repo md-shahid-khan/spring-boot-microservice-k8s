@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: inventory-service
+  datasource:
+    url: jdbc:mysql://localhost:3366/inventory_service
+    username: shahid
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: none
+  flyway:
+    url: jdbc:mysql://localhost:3366/inventory_service
+    user: shahid
+    password: password
+server:
+  port: 8090
+
+
+
+

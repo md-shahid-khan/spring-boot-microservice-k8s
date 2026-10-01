@@ -19,11 +19,8 @@ public class ProductService {
 
     public ProductResponse createProduct(ProductRequest productRequest) {
         Product entity = ProductMapper.toEntity(productRequest);
-        log.info("Creating product with id {} name {} description {} price {}", entity.getId(), entity.getName(), entity.getDescription(), entity.getPrice());
-
         Product createdProduct = productRepository.save(entity);
 
-        log.info("Created product with id {} name {} description {} price {}", createdProduct.getId(), createdProduct.getName(), createdProduct.getDescription(), createdProduct.getPrice());
 
         return ProductMapper.toResponse(createdProduct);
 

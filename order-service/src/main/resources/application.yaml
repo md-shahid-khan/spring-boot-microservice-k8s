@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/order_service
+    username: shahid
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: none
+  flyway:
+    url: jdbc:mysql://localhost:3306/order_service
+    user: shahid
+    password: password
+server:
+  port: 9080
+
+
+
