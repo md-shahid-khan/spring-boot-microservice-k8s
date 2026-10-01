@@ -1,0 +1,9 @@
+server:
+  port: 1070
+
+spring:
+  application:
+    name: product-service
+
+  mongodb:
+    uri: mongodb://admin:password@localhost:27017/product-service?authSource=admin
